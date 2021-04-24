@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Copy the student's code into the autograder directory. Make sure
+# student has the right package name in their file and that it's in
+# the right place
+find /autograder/submission -type f -name "*.java" -exec cp {} /autograder/source/src/. \;
+
+# Copy any provided code into the autograder directory.  This will overwrite student code
+# if needed.
+find /autograder/source/provided -type f -name "*.java" -exec cp {} /autograder/source/src/. \;
+
+# Run the submission with parameters in the config.json file
+php run_submission.php

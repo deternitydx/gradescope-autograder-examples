@@ -1,0 +1,10 @@
+{
+    "submissions_allowed": 15,
+    "max_score": 100,
+    "min_coverage_required": 10,
+    "max_coverage_required": 90,
+    "required_files": [
+        "ClassOne.java",
+        "ClassTwo.java"
+    ]
+}
