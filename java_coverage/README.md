@@ -33,3 +33,20 @@ If there are any files that you would like to provide that should overwrite the 
 *Note:* Student JUnit test classes should end with "Test".  The `build.xml` file excludes those classes from code coverage analysis.
 
 Lastly, zip up the contents of the `java_coverage` directory and upload as an autograder to Gradescope.
+
+### Gradescope Results
+
+When the students submit their code to Gradescope, the results will appear as follows:
+
+```
+You have used 4 submission(s) out of a maximum 10 allowed.
+Here are your code coverage results:
+OrderableFeed: 0%
+BackgroundImage: 0%
+User: 12%
+Meme: 0%
+Rating: 0%
+Feed: 0%
+-------------------------------------
+Total Coverage: 2.96%
+```
