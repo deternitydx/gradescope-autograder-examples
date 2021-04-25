@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /autograder/source
+
+# Run the autograder code
+php grade.php /autograder/submission/ > /autograder/results/results.json
