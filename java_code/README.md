@@ -22,3 +22,13 @@ Save your JUnit test files in the `src/main` directory.  An example test file, `
 Provide any starter code for students in the `src` directory.  That code will be overwritten by student uploads to Gradescope.  If there are any files that you would like to provide that should overwrite the student's submission, include those in the `provided` directory.
 
 Lastly, zip up the contents of the `java_code` directory and upload as an autograder to Gradescope.
+
+### Gradescope Results
+
+When the students submit their code to Gradescope, the results will also include a statement about their submission count: 
+
+```
+You have used 4 submission(s) out of a maximum 10 allowed.
+```
+
+*Note:* If there are any compile-time errors, they will also be displayed to the student.

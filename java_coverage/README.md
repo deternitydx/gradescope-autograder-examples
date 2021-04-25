@@ -50,3 +50,5 @@ Feed: 0%
 -------------------------------------
 Total Coverage: 2.96%
 ```
+
+*Note:* If there are any compile-time errors, they will also be displayed to the student.
