@@ -43,7 +43,7 @@ $countPrevious = count($prior["previous_submissions"]);
 
 $submissionCount = $countPrevious + 1;
 
-if ($submissionCount > $submissionsAllowed) {
+if ($submissionsAllowed != 0 && $submissionCount > $submissionsAllowed) {
 
     // find the latest submission (Gradescope documentation doesn't say if they're ordered!)
     $latest = null;
@@ -83,7 +83,9 @@ if ($submissionCount > $submissionsAllowed) {
 
 }
 
-$countOut = "You have used $submissionCount submission(s) out of a maximum $submissionsAllowed allowed.<br>\n\n";
+$countOut = "";
+if ($submissionsAllowed > 0)
+    $countOut = "You have used $submissionCount submission(s) out of a maximum $submissionsAllowed allowed.<br>\n\n";
 
 // Check for the required files
 $reqFiles = [];
